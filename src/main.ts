@@ -3,10 +3,10 @@ import './kalibrering'
 // Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
 // Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
 // Röda understrykningar i VS Code är TypeScript som varnar. Håll musen över dem och läs.
-console.log('Hej från Kafé Kardemumma')
 
 // STEG 1 ------------------------------------------------------------
 // TODO: skriv ut texten "Hej från Kafé Kardemumma" med console.log
+console.log('Hej från Kafé Kardemumma')
 
 // STEG 2 ------------------------------------------------------------
 // TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
@@ -14,6 +14,12 @@ console.log('Hej från Kafé Kardemumma')
 // TODO: skapa variablerna antalBullar (2) och antalKaffe (1) med let, båda number
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
+const kafeNamn: string = 'Kafé Kardemumma'
+const prisBulle: number = 35
+const prisKaffe: number = 32
+let antalBullar: number = 2
+let antalKaffe: number = 1
+console.log(kafeNamn)
 
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
