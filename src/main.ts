@@ -57,7 +57,7 @@ console.log(`Summa: ${summa} kr. Varav moms (12 %): ${momsDel.toFixed(2)}`)
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
 const isStudent: boolean = true
 if (isStudent === true) {
-    const attBetala = summa - summa * 0.1
+    const attBetala = summa * 0.9
     const varavMoms = (attBetala * 0.12) / 1.12
     console.log(
         `Att betala: ${attBetala} kr. Varav moms (12 %): ${varavMoms.toFixed(2)}`
@@ -70,6 +70,28 @@ if (isStudent === true) {
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+let isOpen: boolean
+let veckodag: string = 'måndag'
+let klockslag: number = 10
+
+if (veckodag === 'lördag' || veckodag === 'söndag') {
+    isOpen = klockslag >= 9 && klockslag < 16
+} else if (
+    veckodag === 'måndag' ||
+    veckodag === 'tisdag' ||
+    veckodag === 'onsdag' ||
+    veckodag === 'torsdag' ||
+    veckodag === 'fredag'
+) {
+    isOpen = klockslag >= 7 && klockslag < 18
+} else {
+    isOpen = false
+}
+if (isOpen === true) {
+    console.log('Öppet just nu: ja')
+} else {
+    console.log('Öppet just nu: nej')
+}
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
