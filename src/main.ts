@@ -26,6 +26,21 @@ console.log(kafeNamn)
 //       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+const customerName: string = 'Kalle'
+const customerSinceYear: number = 2026
+let isVerified: boolean = true
+let customerAddress
+let customerPhone = null
+
+// Jag tror att null har typen object
+
+console.log(
+    typeof customerName,
+    typeof customerSinceYear,
+    typeof isVerified,
+    typeof customerAddress,
+    typeof customerPhone
+)
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
