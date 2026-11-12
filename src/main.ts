@@ -95,3 +95,9 @@ if (isOpen === true) {
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+console.log('5' + 3)
+console.log('5' - 3)
+console.log(true + 1)
+console.log(0.1 + 0.2)
+console.log('' === 0)
+console.log(null == undefined)
