@@ -48,6 +48,9 @@ console.log(
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
+const summa = antalBullar * prisBulle + antalKaffe * prisKaffe
+const momsDel = (summa * 0.12) / 1.12
+console.log(`Summa: ${summa} kr. Varav moms (12 %): ${momsDel.toFixed(2)}`)
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
